@@ -1,0 +1,8 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "autoDocstring.guessTypes": true,
+    "autoDocstring.includeName": true,
+    "autoDocstring.docstringFormat": "google",
+    "flake8.interpreter": [".venv/Scripts/python.exe"]
+}

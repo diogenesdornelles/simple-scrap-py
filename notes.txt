@@ -1,0 +1,73 @@
+pip install pylint
+pip install mypy
+
+mypy main.py
+
+pip install autopep8
+autopep8 main.py --in-place
+
+formatação
+pip install black flake8 isort
+
+pyproject.toml
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
+
+.black
+line_length = 88
+target_version = "py38"
+include_trailing_comma = true
+force_single_line_imports = true
+string_normalization = true
+
+.flake8
+
+[flake8]
+max-line-length = 120
+ignore = E203, W503
+
+
+.isort.cfg
+
+[settings]
+profile = black
+
+black arquivo.py
+flake8 arquivo.py
+isort arquivo.py
+
+black *.py, flake8 *.py, isort *.py
+
+
+pip install poetry
+
+poetry config virtualenvs.in-project true // create .venv in root
+
+poetry init // initialize
+
+poetry install // install deps
+
+poetry shell // entry venv
+
+poetry exit // exit shell
+
+poetry deactivate // deactive venv
+
+poetry env list // lists all environments
+
+poetry add <package prod>
+
+poetry add --dev <package dev>
+
+poetry remove <package>
+
+.venv is similar to node_modules. Delete if want
+
+poetry env info
+
+poetry env info -p // path
+
+
+sphinx-apidoc -o ./docs ./seu_projeto
